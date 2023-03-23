@@ -16,24 +16,24 @@ const Navbar = () => {
         //     </li>
         // </div>
         <div>
-            <div className="navbar navbar-expand-md bg-dark navbar-dark" style={{height:"85px"}}>
-                <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={200} height={90}/></Link>
+            <div className="navbar navbar-expand-md bg-dark navbar-dark opacity-60" style={{height:"85px"}}>
+                <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={200} height={85}/></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul className="navbar-nav ml-auto mr-5">
+                    <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/About">ABOUT</Link>
+                            <Link className="nav-link" to="/About"><b>ABOUT</b></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Projects" >PROJECTS</Link>
+                            <Link className="nav-link" to="/Projects"><b>PROJECTS</b></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Resume">RESUME</Link>
+                            <Link className="nav-link" to="/Resume"><b>RESUME</b></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Contact">CONTACT</Link>
+                            <Link className="nav-link" to="/Contact"><b>CONTACT</b></Link>
                         </li>
                         <li className="nav-item d-none d-sm-none d-md-block ">
                             <GithubCorner href={"https://github.com/universekavish"} bannerColor="#151513" octoColor="#fff" size={85} direction="right" />
