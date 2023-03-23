@@ -148,7 +148,7 @@ function useTypeWriter(props) {
     return ref;
 }
 
-const wrapStyle = { borderRight: '0.08em solid #666', color: "#3e64ff", textDecoration: "underline" };
+const wrapStyle = { borderRight: '0.08em solid #666', color: "#2B46B2", textDecoration: "underline" };
 
 function TypeWriter(props) {
     const { period, rotate } = props;
