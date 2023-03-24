@@ -19,10 +19,10 @@ body {
 /*#######################################################################################*/
 /*#######################################################################################*/
 /*#################     Main.js     #####################################################*/
-/* #main {
-  background: linear-gradient(to right,  #ecf0ff 0%,#ecf0ff 50%,#ffffff 50%,#ffffff 100%);
-  height: 521px;
-} */
+#main {
+  /* background: linear-gradient(to right,  #ecf0ff 0%,#ecf0ff 50%,#ffffff 50%,#ffffff 100%); */
+  height: 545px;
+}
 
 #hi {
     font-family: 'Poppins', sans-serif;
@@ -91,7 +91,7 @@ body {
 }
 
 #about {
-  background-color: #ecf0ff;
+  background-color: #d1d6dc;
 }
 
 
@@ -165,7 +165,7 @@ li.timeline-item::before {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 800;
-  color: #ffffff;
+  color: #e7e9ec;
   letter-spacing: 4px;
 }
 .lead {
