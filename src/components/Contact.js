@@ -9,8 +9,11 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessaage] = useState("");
 
+    const [loader, setLoader] = useState(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        setLoader(true);
         
         db.collection('contacts').add({
             name:name,
@@ -19,9 +22,11 @@ const Contact = () => {
         })
         .then(() => {
             alert("Thanks for dropping a message, will get back to you soon...😊")
+            setLoader(false);
         })
         .catch(error =>{
             alert(error.message);
+            setLoader(false);
         });
 
         setName('');
@@ -73,7 +78,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <div className="form-group">
-                                <button type="submit" name="submit" className="btn btn-primary" >Send Message</button>
+                                <button type="submit" name="submit" className="btn btn-primary" style={{background : loader ? "#ccc" : "rgb(2, 2, 10)"}}>Send Message</button>
                             </div>
                         </div>
                     </form>
