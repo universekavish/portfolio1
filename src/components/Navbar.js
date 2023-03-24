@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GithubCorner from 'react-github-corner';
-import Main from './Main';
 
 // this import is fix for navbar coming as table instead of navbar
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -34,7 +33,6 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <Navbar />
         </div>
     )
 };
