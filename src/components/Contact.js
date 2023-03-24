@@ -1,28 +1,85 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import firebase from 'firebase';
+
+import { db } from "../firebase";
 
 const Contact = () => {
-    addMessage(e) {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessaage] = useState("");
+
+    const handleSubmit = (e) => {
         e.preventDefault();
+        
+        db.collection('contacts').add({
+            name:name,
+            email:email,
+            message:message,
+        })
+        .then(() => {
+            alert("Thanks for dropping a message, will get back to you soon...😊")
+        })
+        .catch(error =>{
+            alert(error.message);
+        });
 
-        var firebaseConfig = {
-            apiKey:process.REACT_APP_FIREBASE_API_KEY,
-            authDomain: "XXXXXXXXXXXXXXXXXX",
-            databaseURL: "XXXXXXXXXXXXXXXXXX",
-            projectId: "XXXXXXXXXXXXXXXXXX",
-            storageBucket: "XXXXXXXXXXXXXXXXXXXXXX",
-            messagingSenderId: "XXXXXXXXXXXXXXX",
-            appId: "XXXXXXXXXXXXXXXXXXXXXXX",
-            measurementId: "XXXXXXXXXXXX"
-        };
-
+        setName('');
+        setEmail('');
+        setMessaage('');
     }
-    
+
     return(
         <div>
-            <h1>Contact</h1>
+            <Navbar />
+            <div>
+                <div className="container contact-form pt-5 pb-5">
+                    <div className="contact-image">
+                        <img src={require('../images/message.png')} className="rounded-circle mx-auto img-fluid d-block" style={{ width: "200px", height: "200px" }} alt="" />
+                    </div>
+                    <form id="contactForm" onSubmit={handleSubmit}>
+                        <h3 className="mb-3">Drop a Message</h3>
+                        <div className="alert">Your message has been sent</div>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="form-group">
+                                    <input 
+                                        placeholder="Name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                    />
+                                </div>
+                                <div><p></p></div>
+                                <div className="form-group">
+                                    <input 
+                                        placeholder="Email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                </div>
+                                <div><p></p></div>
+                                {/* <div className="form-group">
+                                    <input type="text" name="phone" className="form-control" placeholder="Phone Number" id="phone" />
+                                </div> */}
+                                <div className="form-group">
+                                    <textarea 
+                                        placeholder="Message"
+                                        value={message}
+                                        onChange={(e) => setMessaage(e.target.value)}
+                                    style={{ width: "100%", height: "150px" }}></textarea>
+                                </div>
+                                <div><p></p></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="form-group">
+                                <button type="submit" name="submit" className="btn btn-primary" >Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <Footer />
         </div>
     )
 };

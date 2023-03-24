@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GithubCorner from 'react-github-corner';
+import About from './About';
+import Projects from './Projects';
+import Resume from './Resume';
+import Contact from './Contact';
 
 // this import is fix for navbar coming as table instead of navbar
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,7 +20,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
-                            <Link className="nav-link" to="./About"><b>ABOUT</b></Link>
+                            <Link className="nav-link" to="/about"><b>ABOUT</b></Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/projects"><b>PROJECTS</b></Link>
