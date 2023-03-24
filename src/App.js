@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/" Component={App} />
         </Routes> */}
-        <Contact />
+        <Projects />
         <Main />
         <Footer />
       </Router>

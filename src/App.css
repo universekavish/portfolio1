@@ -196,7 +196,7 @@ section.extra-features .item {
 }
 
 section.extra-features .item:hover {
-  background: #ff7e5f;
+  background: #212020;
   -webkit-box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
 }
