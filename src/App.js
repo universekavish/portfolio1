@@ -8,21 +8,27 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
-function App() {
+function App(props) {
   return (
     <div className='App'>
+      console.log("1");
       <Router>
+        <div>
         <Navbar />
-        {/* <Routes>
+        console.log("2");
+        <Routes>
+        console.log("3");
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/" Component={App} />
-        </Routes> */}
+        </Routes>
+        console.log("4");
         <Projects />
         <Main />
         <Footer />
+        </div>
       </Router>
     </div>
   );
