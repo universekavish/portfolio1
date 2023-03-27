@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div>
             <div>
-                <section id="extra-features" class="extra-features pt-5 pb-5" style={{ backgroundColor: "#33383e" }}>
+                <section id="extra-features" className="extra-features pt-5 pb-5" style={{ backgroundColor: "#33383e" }}>
                     <div className="container text-center">
                         <h2 id="Projects">PROJECTS DEVELOPED</h2>
                         <div className="grid row">

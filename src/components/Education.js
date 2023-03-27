@@ -14,7 +14,7 @@ const Education = () => {
                                 2017-2021
                             </span>
                             <p className="text-small mt-2 mb-0 font-weight-light">Indian Institute of Information Technology Kota</p>
-                            <a href={"http://www.iiitkota.ac.in/"} class="badge badge-primary ">Website</a>
+                            <a href={"http://www.iiitkota.ac.in/"} className="badge badge-primary ">Website</a>
                         </li>
                     </ul>
                 </div>
