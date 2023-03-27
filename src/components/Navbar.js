@@ -10,9 +10,9 @@ const Navbar = () => {
         <div>
             <div className="navbar navbar-expand-md bg-dark navbar-dark opacity-60" style={{height:"85px"}}>
                 <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={140} height={72}/></Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
-                </button>
+                </button> */}
                 {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button> */}
@@ -25,7 +25,10 @@ const Navbar = () => {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> */}
-                <div className="navbar-collapse collapse" id="collapsibleNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
                             <Link className="nav-link" to="/about"><b>ABOUT</b></Link>
