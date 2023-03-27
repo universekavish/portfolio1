@@ -13,7 +13,7 @@ const Navbar = () => {
     return(
         <div>
             <div className="navbar navbar-expand-md bg-dark navbar-dark opacity-60" style={{height:"85px"}}>
-                <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={200} height={85}/></Link>
+                <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={140} height={72}/></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>

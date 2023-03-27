@@ -28,14 +28,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className="row text-center d-flex justify-content-center pt-5 ">
-            <div className="col-md-2 mb-3">
-                    <p className="font-weight-bold " style={{fontSize:'18px', color:'white'}}>
-                        <b>Made with ❤️ by Kavish</b>
-                    </p>
-                </div>
-                <div className="col-md-2 mb-3">
-                    <pre className="font-weight-bold " style={{ fontSize: '20px', color: 'white' }}>
-                        Find me on
+                <div className="row justify-content-md-center">
+                    <p className="font-weight-bold " style={{ fontSize: '23px', color: 'white' }}>
+                        Find me on <></>
                         <a
                             href="https://github.com/universekavish"
                             style={{ color: "white" }}
@@ -43,7 +38,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             <AiFillGithub />
-                        </a>
+                        </a><></>
                         <a
                             href="https://www.linkedin.com/in/kavishboyal/"
                             style={{ color: "white" }}
@@ -51,7 +46,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             <AiFillLinkedin />
-                        </a>
+                        </a><></>
                         <a
                             href="https://www.instagram.com/oneclumsybear"
                             style={{ color: "white" }}
@@ -59,7 +54,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             <AiFillInstagram />
-                        </a>
+                        </a><></>
                         <a
                             href="https://twitter.com/kavish_boyal"
                             style={{ color: "white" }}
@@ -67,8 +62,13 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             <AiFillTwitterCircle />
-                        </a>
-                    </pre>
+                        </a><></>
+                    </p>
+                </div>
+                <div className="col-md-auto">
+                    <p className="font-weight-bold " style={{ fontSize: '18px', color: 'white' }}>
+                        <b>Made with ❤️ by Kavish</b>
+                    </p>
                 </div>
             </div>
         </div>

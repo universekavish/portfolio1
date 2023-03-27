@@ -11,7 +11,6 @@ import Contact from './components/Contact';
 function App(props) {
   return (
     <div className='App'>
-      console.log("1");
       <Router>
         <Navbar />
         {/* console.log("2");
@@ -24,7 +23,7 @@ function App(props) {
           <Route exact path="/" Component={App} />
         </Routes>
         console.log("4"); */}
-        <Resume />
+       
         <Main />
         <Footer />
       </Router>
