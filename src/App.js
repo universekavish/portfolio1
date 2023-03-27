@@ -13,9 +13,8 @@ function App(props) {
     <div className='App'>
       console.log("1");
       <Router>
-        <div>
         <Navbar />
-        console.log("2");
+        {/* console.log("2");
         <Routes>
         console.log("3");
           <Route exact path="/about" component={About} />
@@ -24,11 +23,10 @@ function App(props) {
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/" Component={App} />
         </Routes>
-        console.log("4");
-        <Projects />
+        console.log("4"); */}
+        <Resume />
         <Main />
         <Footer />
-        </div>
       </Router>
     </div>
   );
