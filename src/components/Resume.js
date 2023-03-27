@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from '../assets/Kavish_Boyal_Resume.pdf';
@@ -20,7 +19,6 @@ const Resume = () => {
     
     return(
         <div>
-            <Navbar />
             <div><p></p></div>
             <div className="row justify-content-md-center">
                 <div className="col-md-auto">

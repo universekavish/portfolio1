@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import { db } from "../firebase";
@@ -36,7 +35,6 @@ const Contact = () => {
 
     return(
         <div>
-            <Navbar />
             <div>
                 <div className="container contact-form pt-5 pb-5">
                     <div className="contact-image">
@@ -84,7 +82,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 };

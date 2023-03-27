@@ -13,14 +13,16 @@ function App(props) {
     <div className='App'>
       <Router>
         <Navbar />
-        {/* <Routes>
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/" Component={App} />
-        </Routes> */}
-       
+        <div>
+          <Routes>
+            {/* fix for Router inside Router error */}
+            {/* <Route exact path="/" element={<App />} /> */}
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
         <Main />
         <Footer />
       </Router>

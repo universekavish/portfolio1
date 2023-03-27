@@ -1,12 +1,10 @@
 import React from "react";
 import githubLogo from '../images/socialIcons/githublogo.png';
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const Projects = () => {
     return (
         <div>
-            <Navbar />
             <div>
                 <section id="extra-features" class="extra-features pt-5 pb-5" style={{ backgroundColor: "#33383e" }}>
                     <div className="container text-center">
@@ -62,7 +60,7 @@ const Projects = () => {
                     </div>
                 </section>
             </div>
-            < Footer />
+            {/* < Footer /> */}
         </div >
     )
 };

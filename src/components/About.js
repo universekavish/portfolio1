@@ -1,6 +1,7 @@
 import React from "react";
 import Education from './Education';
 import Footer from "./Footer";
+import Experience from "./Experience";
 
 const About = () => {
     return(
@@ -29,8 +30,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Experience />
             <Education />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 };
