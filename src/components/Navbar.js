@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GithubCorner from 'react-github-corner';
-import About from './About';
-import Projects from './Projects';
-import Resume from './Resume';
-import Contact from './Contact';
 
 // this import is fix for navbar coming as table instead of navbar
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
     return(
@@ -17,7 +13,19 @@ const Navbar = () => {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="collapsibleNavbar">
+                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> */}
+                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> */}
+                {/* <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> */}
+                <div className="navbar-collapse collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
                             <Link className="nav-link" to="/about"><b>ABOUT</b></Link>
