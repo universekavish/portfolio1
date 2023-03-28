@@ -66,7 +66,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="col-md-auto">
-                    <p className="font-weight-bold " style={{ fontSize: '18px', color: 'white' }}>
+                    <p className="font-weight-bold " style={{ fontSize: '16px', color: 'white' }}>
                         <b>Made with ❤️ by Kavish</b>
                     </p>
                 </div>
