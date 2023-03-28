@@ -4,11 +4,14 @@ import GithubCorner from 'react-github-corner';
 
 // this import is fix for navbar coming as table instead of navbar
 import 'bootstrap/dist/css/bootstrap.min.css';
+// fix for navbar collapse button not working
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 const Navbar = () => {
     return(
         <div>
-            <div className="navbar navbar-expand-md bg-dark navbar-dark opacity-60" style={{height:"85px"}}>
+            {/* removing height from below div was the fix for navbar content showing on other components when expanding. */}
+            <div className="navbar navbar-expand-sm bg-dark navbar-dark">
                 <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={140} height={72}/></Link>
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
@@ -25,10 +28,30 @@ const Navbar = () => {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> */}
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
+                </button> */}
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                {/* <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls='navbarNav'
+                aria-expanded='false'
+                aria-label='Toggle navigation'
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button> */}
+                {/* <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls='navbar'>
+                    <span class="navbar-toggler-icon"></span>
+                </button> */}
+                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> */}
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
                             <Link className="nav-link" to="/about"><b>ABOUT</b></Link>
