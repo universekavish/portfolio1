@@ -11,47 +11,13 @@ const Navbar = () => {
     return(
         <div>
             {/* removing height from below div was the fix for navbar content showing on other components when expanding. */}
-            <div className="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div className="navbar navbar-expand-md bg-dark navbar-dark">
                 <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={140} height={72}/></Link>
-                {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span className="navbar-toggler-icon"></span>
-                </button> */}
-                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> */}
-                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> */}
-                {/* <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> */}
-                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button> */}
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                {/* <button
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                class="navbar-toggler"
-                aria-controls='navbarNav'
-                aria-expanded='false'
-                aria-label='Toggle navigation'
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button> */}
-                {/* <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls='navbar'>
-                    <span class="navbar-toggler-icon"></span>
-                </button> */}
-                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> */}
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                {/*  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" adding this to below line was the fix for navbar not closing automatically say suppose I clicked on About */}
+                <div className="collapse navbar-collapse" id="navbarSupportedContent" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
                             <Link className="nav-link" to="/about"><b>ABOUT</b></Link>
