@@ -47,6 +47,10 @@ body {
     text-shadow: 0 0 3px #753232, 0 0 5px #e5e5f2;
 }
 
+#passion {
+  text-shadow: 0 0 3px #684646, 0 0 5px #e5e5f2;
+}
+
 
 #typeWrite {
   font-size: 32px;
@@ -77,9 +81,9 @@ body {
 #aboutName {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
-  color: #3e64ff;
+  color: #0d0e11;
   letter-spacing: 4px;
   text-align: center!important;
 }
@@ -94,8 +98,22 @@ body {
   background-color: #d1d6dc;
 }
 
+#contact {
+  /* css to background with opacity */
+  background: rgba(209, 214, 220, .3);
+}
 
+#resume{
+  background: rgba(209, 214, 220, .2);
+}
 
+#project{
+  background: rgba(209, 214, 220, 1);
+}
+
+#projects1 {
+  flood-color: #212020;
+}
 /*#######################################################################################*/
 /*#######################################################################################*/
 /*#######################################################################################*/
@@ -165,9 +183,18 @@ li.timeline-item::before {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 800;
-  color: #e7e9ec;
+  color: #3b4149;
   letter-spacing: 4px;
 }
+
+#Projects2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #3b4149;
+  letter-spacing: 4px;
+}
+
 .lead {
   font-size: 1.2rem;
   font-weight: 300;
@@ -196,7 +223,7 @@ section.extra-features .item {
 }
 
 section.extra-features .item:hover {
-  background: #212020;
+  background: #747373;
   -webkit-box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
 }

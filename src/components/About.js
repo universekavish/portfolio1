@@ -1,6 +1,5 @@
 import React from "react";
 import Education from './Education';
-import Footer from "./Footer";
 import Experience from "./Experience";
 
 const About = () => {
@@ -19,7 +18,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-3 mx-auto">
                             <div className="text-center">
                                 <a className="center-block" href={"https://drive.google.com/file/d/19aqE4f3a82QUuBTv98Hmq9N5Rk-GdGDF/view?usp=sharing"}>
@@ -27,7 +26,7 @@ const About = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Experience />

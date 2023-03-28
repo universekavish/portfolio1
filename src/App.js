@@ -17,13 +17,15 @@ function App(props) {
           <Routes>
             {/* fix for Router inside Router error */}
             {/* <Route exact path="/" element={<App />} /> */}
+            {/* fix for showing main on home screen only */}
+            <Route path="/" element={<Main />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <Main />
+        {/* <Main /> */}
         <Footer />
       </Router>
     </div>

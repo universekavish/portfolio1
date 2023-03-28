@@ -1,15 +1,15 @@
 import React from "react";
 import githubLogo from '../images/socialIcons/githublogo.png';
-import Footer from "./Footer";
 
 const Projects = () => {
     return (
         <div>
-            <div>
-                <section id="extra-features" className="extra-features pt-5 pb-5" style={{ backgroundColor: "#33383e" }}>
+            <div id="project">
+                <section id="extra-features" className="extra-features pt-5 pb-5">
                     <div className="container text-center">
                         <h2 id="Projects">PROJECTS DEVELOPED</h2>
-                        <div className="grid row">
+                        <h3 id="Projects2">(For github repo of the project, please click respective github logo)</h3>
+                        <div className="grid row" id="projects1" style={{color:"#212020"}}>
                             <div className="item col-lg-4 col-md-6">
                                 <div className="icon">
                                     <i className="icon-diploma">

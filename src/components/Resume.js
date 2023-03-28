@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Footer from "./Footer";
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from '../assets/Kavish_Boyal_Resume.pdf';
 import Button from 'react-bootstrap/Button';
@@ -18,8 +17,8 @@ const Resume = () => {
     }, []);
     
     return(
-        <div>
-            <div><p></p></div>
+        <div id="resume">
+            <br></br>
             <div className="row justify-content-md-center">
                 <div className="col-md-auto">
                     <Button
@@ -53,7 +52,7 @@ const Resume = () => {
                     </Button>
                 </div>
             </div>
-
+            <br></br>
         </div>
     )
 };

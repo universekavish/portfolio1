@@ -168,6 +168,7 @@ function Tempor() {
                 <p id="hi" className="mt-5">Heyy, I AM</p>
                 <h1 id="myName">Kavish Boyal</h1>
                 <h2 id="typeWrite">I'm a <TypeWriter period={2000} rotate={mainRotate} /></h2>
+                {/* <h3 id="passion">with a passion for learning and creating.</h3> */}
             </div>
         </div>
     );

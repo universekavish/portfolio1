@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "./Footer";
 
 import { db } from "../firebase";
 
@@ -35,15 +34,15 @@ const Contact = () => {
 
     return(
         <div>
-            <div>
+            <div id="contact">
                 <div className="container contact-form pt-5 pb-5">
                     <div className="contact-image">
                         <img src={require('../images/message.png')} className="rounded-circle mx-auto img-fluid d-block" style={{ width: "200px", height: "200px" }} alt="" />
                     </div>
                     <form id="contactForm" onSubmit={handleSubmit}>
-                        <h3 className="mb-3">Drop a Message</h3>
+                        <h3 className="mb-3" style={{textAlign: "center"}}><b>Drop a Message</b></h3>
                         <div className="alert">Your message has been sent</div>
-                        <div className="row">
+                        <div className="row justify-content-md-center">
                             <div className="col-md-6">
                                 <div className="form-group">
                                     <input 
@@ -75,7 +74,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="form-group">
+                            <div className="form-group" style={{textAlign:"center"}}>
                                 <button type="submit" name="submit" className="btn btn-primary" style={{background : loader ? "#ccc" : "rgb(2, 2, 10)"}}>Send Message</button>
                             </div>
                         </div>
