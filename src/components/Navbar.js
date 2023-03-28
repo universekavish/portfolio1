@@ -17,8 +17,8 @@ const Navbar = () => {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {/*  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" adding this to below line was the fix for navbar not closing automatically say suppose I clicked on About */}
-                {/* removed data-bs-target="#navbarSupportedContent because it was giving rotating effect in Laptop navbar when you clicked on any nav-link */}
-                <div className="collapse navbar-collapse" id="navbarSupportedContent" data-bs-toggle="collapse">
+                {/* CANT REMOVE_ CLOSING NOT WORKING IN MOBILE without - removed data-bs-target="#navbarSupportedContent" because it was giving rotating effect in Laptop navbar when you clicked on any nav-link */}
+                <div className="collapse navbar-collapse" id="navbarSupportedContent" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     <ul className="navbar-nav me-auto mr-5">
                         <li className="nav-item">
                             <Link className="nav-link" to="/about"><b>ABOUT</b></Link>
