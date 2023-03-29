@@ -28,7 +28,7 @@ const Resume = () => {
                         style={{ maxWidth: "250px" }}
                     >
                         <AiOutlineDownload />
-                        &nbsp;Download CV
+                        &nbsp;Download Resume
                     </Button>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Resume = () => {
                         style={{ maxWidth: "250px" }}
                     >
                         <AiOutlineDownload />
-                        &nbsp;Download CV
+                        &nbsp;Download Resume
                     </Button>
                 </div>
             </div>
