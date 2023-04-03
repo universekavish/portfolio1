@@ -49,6 +49,7 @@ const Contact = () => {
                                         placeholder="Name"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
+                                        style={{ backgroundColor:'#d9d9d9' }}
                                     />
                                 </div>
                                 <div><p></p></div>
@@ -57,6 +58,7 @@ const Contact = () => {
                                         placeholder="Email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
+                                        style={{ backgroundColor:'#d9d9d9' }}
                                     />
                                 </div>
                                 <div><p></p></div>
@@ -68,7 +70,7 @@ const Contact = () => {
                                         placeholder="Message"
                                         value={message}
                                         onChange={(e) => setMessaage(e.target.value)}
-                                    style={{ width: "100%", height: "150px" }}></textarea>
+                                    style={{ width: "100%", height: "150px", backgroundColor:'#d9d9d9' }}></textarea>
                                 </div>
                                 <div><p></p></div>
                             </div>

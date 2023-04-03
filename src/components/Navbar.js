@@ -13,8 +13,8 @@ const Navbar = () => {
             {/* removing height from below div was the fix for navbar content showing on other components when expanding. */}
             <div className="navbar navbar-expand-md bg-dark navbar-dark">
                 <Link className="navbar-brand" to="/"><img src={require('../images/logo.png')} alt="logo" width={140} height={72}/></Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 {/*  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" adding this to below line was the fix for navbar not closing automatically say suppose I clicked on About */}
                 {/* CANT REMOVE_ CLOSING NOT WORKING IN MOBILE without - removed data-bs-target="#navbarSupportedContent" because it was giving rotating effect in Laptop navbar when you clicked on any nav-link */}
