@@ -15,7 +15,7 @@ const Experience = () => {
                                 Nov. 2021 - Present
                             </span>
                             <p className="text-small mt-2 mb-0 font-weight-light">Client: CommScope, Product: Ruckus IoT controller.
-• Working as a Full Stack Developer, Teck Stack ‑ Python, MongoDB, Django, DjangoREST framework, React JS, Flask, MQTT.</p>
+• Working as a Full Stack Developer, Tech Stack ‑ Python, MongoDB, Django, DjangoREST framework, React JS, Flask, MQTT.</p>
                         </li>
                     </ul>
                 </div>
