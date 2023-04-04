@@ -25,7 +25,6 @@ function App(props) {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        {/* <Main /> */}
         <Footer />
       </Router>
     </div>
