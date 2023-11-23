@@ -10,6 +10,15 @@ const Projects = () => {
                         <h2 id="Projects">PROJECTS DEVELOPED</h2>
                         <h3 id="Projects2">(For github repo of the project, please click respective github logo)</h3>
                         <div className="grid row" id="projects1" style={{ color: "#212020" }}>
+                        <div className="item col-lg-4 col-md-6">
+                                <div className="icon">
+                                    <i className="icon-diploma">
+                                        <a href={"https://github.com/universekavish/AI-image-generation-app"} ><img src={githubLogo} alt="logo" style={{ width: "50px", height: "50px" }} /></a>
+                                    </i>
+                                </div>
+                                <h3 className="h5">MERN Stack AI Image Generation App</h3>
+                                <p>Built an innovative image generation app using MERN Stack and OpenAI API.</p>
+                            </div>
                             <div className="item col-lg-4 col-md-6">
                                 <div className="icon">
                                     <i className="icon-diploma">
@@ -17,7 +26,7 @@ const Projects = () => {
                                     </i>
                                 </div>
                                 <h3 className="h5">My Portfolio</h3>
-                                <p>Building a portfolio to practice React and showcase my skills.</p>
+                                <p>Built a portfolio to practice React and showcase my skills.</p>
                             </div>
                             <div className="item col-lg-4 col-md-6">
                                 <div className="icon">
@@ -26,7 +35,7 @@ const Projects = () => {
                                     </i>
                                 </div>
                                 <h3 className="h5">Notes App</h3>
-                                <p>Building frontend of a notes App using React JS.</p>
+                                <p>Built a frontend of a notes App using React JS.</p>
                             </div>
                             <div className="item col-lg-4 col-md-6">
                                 <div className="icon">
