@@ -14,7 +14,8 @@ const About = () => {
                     <div className="row" >
                         <div className="col-lg-6 mx-auto">
                             <div className="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                                <p className="mb-0 mt-2 font-italic">"Currently Working as a Software Engineer. Tech Stack - Python, Django, Django RestAPI, ReactJS MongoDB, Postman"</p>
+                                <p className="mb-0 mt-2 font-italic">"Currently Working as a Software Engineer 1 at John Deere."</p>
+                                <p className="mb-0 mt-2 font-italic">"Tech Stack Experience - Python, JavaScript, AWS, Databricks, PowerBI, Django, Django RestAPI, ReactJS MongoDB, Postman"</p>
                             </div>
                         </div>
                     </div>
